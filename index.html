@@ -81,6 +81,23 @@
   <script defer>
     let duration = 120; const timerBox = document.querySelector(".timer__box"), interval = setInterval((() => { let t = Math.floor(duration / 60), e = duration % 60; t = t < 10 ? "0" + t : t, e = e < 10 ? "0" + e : e, timerBox.textContent = `${t}:${e}`, duration <= 0 && (clearInterval(interval), timerBox.textContent = "00:00"), duration-- }), 1e3); var a = b ? c % d : e[f];
   </script>
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3336738216476979');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3336738216476979&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </body>
 
 </html>
